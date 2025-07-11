@@ -1,5 +1,5 @@
 import "./styles.css";
-import {homePageHandler, menuPageHandler} from "./navigation.js"
+import {homePageHandler, menuPageHandler, aboutPageHandler} from "./navigation.js"
 
 const nav = document.querySelector("header > nav")
 const mainContent = document.querySelector('#content')
@@ -38,7 +38,7 @@ function navigationHandler(e) {
 
         case "about":
 
-            
+            mainContent.appendChild(aboutPageHandler())
             e.target.classList.add("cover");
             e.target.classList.remove("hidden")
             nav.children[0].classList.add("hidden")
