@@ -1,4 +1,5 @@
 import "./styles.css";
+import {homePageHandler} from "./navigation.js"
 
 const nav = document.querySelector("header > nav")
 const mainContent = document.querySelector('#content')
@@ -15,6 +16,8 @@ function navigationHandler(e) {
   
     switch (target) {
         case "home":
+
+            mainContent.appendChild(homePageHandler())
         
             e.target.classList.add("cover");
             e.target.classList.remove("hidden")
@@ -45,3 +48,5 @@ function navigationHandler(e) {
     }
     
 }
+
+window.onload = () => mainContent.appendChild(homePageHandler());
