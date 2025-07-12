@@ -1,0 +1,169 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --primary-theme-color: #caf0f8;
+    --primary-text-color: #03045e;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+
+    background-color: var(--primary-theme-color);
+}
+
+.background-design {
+    display: flex;
+
+    width: 100%;
+    position: absolute;
+
+    justify-content: center;
+}
+
+.background-design > img {
+    position: absolute;
+    aspect-ratio: 1;
+    width: 5rem;
+}
+
+.background-design > img:nth-of-type(1) {
+    transform: rotate(20deg);
+    left: 4rem;
+    top: 20rem;
+}
+
+.background-design > img:nth-of-type(2) {
+    left: 18rem;
+    top: 30rem;
+    transform: rotate(50deg);
+}
+
+.background-design > img:nth-of-type(3) {
+    right: 13rem;
+    top: 32rem;
+    transform: rotate(156deg);
+}
+
+.background-design > img:nth-of-type(4) {
+    right: 6rem;
+    top: 8rem;
+    transform: rotate(139deg);
+}
+
+.background-design > img:nth-of-type(5) {
+    right: 6rem;
+    top: 8rem;
+    transform: rotate(139deg);
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 1rem;
+    position: relative;
+
+    margin-top: 20px;
+
+}
+
+li.nav-btn {
+    position: relative;
+}
+
+
+.nav-btn.cover {
+    background-color: #023e8a;
+    color: var(--primary-theme-color);
+}
+
+.nav-btn.hidden {
+    background-color: transparent;
+    color: #03045e;
+}
+
+
+.nav-btn {
+    border-radius: 20px;
+    border: solid 1px #03045e;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    font-family: monospace;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    padding: 5rem;
+}
+
+
+
+.home-page, .menu-page, .about-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+footer {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 16px;
+
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: #03045e;
+
+    color: var(--primary-theme-color);
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-theme-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-theme-color);
+}
+
+.github-profile {
+    display: flex;
+    align-items: center;
+
+    column-gap: 5px;
+}
+
+.github-logo {
+    aspect-ratio: 1;
+    width: 1.5em;
+
+    color: var(--primary-theme-color);
+}

@@ -1,0 +1,33 @@
+.home-page {
+    font-family: monospace;
+    color: var(--primary-text-color);
+}
+
+.restaurant-title {
+    margin-top: 5rem;
+    font-size: 6rem;
+}
+
+.restaurant-description {
+    text-align: center;
+    width: 65%;
+}
+
+.restaurant-best-seller, .restaurant-reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+
+    color: var(--primary-text-color);
+
+    margin-top: 10rem;
+
+    row-gap: 30px;
+}
+
+.restaurant-best-seller > .title, .restaurant-reasons > .title {
+    font-size: 2.8rem;
+}
