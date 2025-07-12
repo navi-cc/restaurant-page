@@ -1,14 +1,16 @@
+.home-page {
+    font-family: monospace;
+    color: var(--primary-text-color);
+}
+
 .restaurant-title {
     margin-top: 5rem;
     font-size: 6rem;
-    font-family: monospace;
-    color: var(--primary-text-color);
 }
 
 .restaurant-description {
     text-align: center;
     width: 65%;
-    font-size: 1rem;
 }
 
 .restaurant-best-seller, .restaurant-reasons {
@@ -24,11 +26,8 @@
     margin-top: 10rem;
 
     row-gap: 30px;
-
-    font-family: monospace;
 }
 
 .restaurant-best-seller > .title, .restaurant-reasons > .title {
     font-size: 2.8rem;
-    font-family: inherit;
 }
