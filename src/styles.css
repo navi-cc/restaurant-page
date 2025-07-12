@@ -19,7 +19,6 @@ body {
     flex-direction: column;
     min-height: 100dvh;
 
-    padding: 10px;
     background-color: var(--primary-theme-color);
 }
 
@@ -127,4 +126,44 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+
+footer {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 16px;
+
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: #03045e;
+
+    color: var(--primary-theme-color);
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-theme-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-theme-color);
+}
+
+.github-profile {
+    display: flex;
+    align-items: center;
+
+    column-gap: 5px;
+}
+
+.github-logo {
+    aspect-ratio: 1;
+    width: 1.5em;
+
+    color: var(--primary-theme-color);
 }
