@@ -1,5 +1,12 @@
-import "./styles.css";
-import {homePageHandler, menuPageHandler, aboutPageHandler} from "./navigation.js"
+import "./styles/styles.css"
+import setHomePage from "./modules/homePage.js"
+import setMenuPage from "./modules/menuPage.js"
+import setAboutPage from "./modules/aboutPage.js"
+
+
+const homePage = setHomePage()
+const menuPage = setMenuPage()
+const aboutPage = setAboutPage()
 
 const nav = document.querySelector("header > nav")
 const mainContent = document.querySelector('#content')
@@ -17,7 +24,7 @@ function navigationHandler(e) {
     switch (target) {
         case "home":
 
-            mainContent.appendChild(homePageHandler())
+            mainContent.appendChild(homePage)
         
             e.target.classList.add("cover");
             e.target.classList.remove("hidden")
@@ -28,7 +35,7 @@ function navigationHandler(e) {
         
         case "menu":
 
-            mainContent.appendChild(menuPageHandler())
+            mainContent.appendChild(menuPage)
 
             e.target.classList.add("cover");
             e.target.classList.remove("hidden")
@@ -38,7 +45,7 @@ function navigationHandler(e) {
 
         case "about":
 
-            mainContent.appendChild(aboutPageHandler())
+            mainContent.appendChild(aboutPage)
             e.target.classList.add("cover");
             e.target.classList.remove("hidden")
             nav.children[0].classList.add("hidden")
@@ -51,4 +58,4 @@ function navigationHandler(e) {
     
 }
 
-window.onload = () => mainContent.appendChild(homePageHandler());
+window.onload = () => mainContent.appendChild(homePage);
